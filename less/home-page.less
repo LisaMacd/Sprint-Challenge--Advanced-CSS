@@ -2,6 +2,14 @@
 
 .home {
 
+  .header-img {
+    width: 100%;
+
+    img {
+      .imgRadius();
+    }
+  }
+
   .intro {
 
     h2 {
@@ -58,6 +66,16 @@
       }
 
       .btn {
+        .defaultButton(@ebony-clay, @wild-sand, 7px);
+        padding: 5px 10px;
+        font-size: 2rem;
+        width: 40%;
+
+        &:hover {
+          background-color: @wild-sand;
+          color: @ebony-clay;
+          transition: 2s;
+        }
       }
     }
 

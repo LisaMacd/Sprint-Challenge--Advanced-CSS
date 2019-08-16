@@ -1,1 +1,25 @@
-// Mixins Here
+
+.defaultPadding() {
+    padding: 20px 20px;
+}
+
+.imgRadius() {
+    border-radius: 5px;
+}
+
+.flexDefault(@justify) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.defaultButton(@background, @color, @radius) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @background;
+    color: @color; 
+    border-radius: @radius;
+}
+
