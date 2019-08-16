@@ -7,9 +7,9 @@
     border-radius: 5px;
 }
 
-.flexDefault(@justify) {
+.flexDefault(@justify, @direction) {
     display: flex;
-    flex-direction: column;
+    flex-direction: @direction;
     justify-content: @justify;
     align-items: center;
 }

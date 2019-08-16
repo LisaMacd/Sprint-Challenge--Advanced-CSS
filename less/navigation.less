@@ -4,7 +4,7 @@
     background-color: @wild-sand;
     margin-top: 20px;
     .defaultPadding();
-    .flexDefault(space-between);
+    .flexDefault(space-between, column);
 
     h1 {
         font-size: 4rem;
@@ -14,6 +14,11 @@
         display: flex;
         justify-content: space-between;
         width: 35%;
+
+        @media @phone {
+            width: 100%;
+            .flexDefault(space-evenly, row);
+        }
     }
 
     a {

@@ -2,11 +2,23 @@
 
 .home {
 
+  @media @phone {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
   .header-img {
     width: 100%;
 
+    @media @phone {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
     img {
       .imgRadius();
+      width: 100%;
     }
   }
 
@@ -27,11 +39,36 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .flexDefault(center, column);
+  }
+
+  .sky{
+
+    @media @phone {
+      display: none;
+  }
+  }
+
+  .launch {
+
+    @media @phone {
+      display: none;
+  }
+  }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        height: auto;
+        text-align: center;
+        width: 100%;
+        .flexDefault(center, column);
+    }
     }
   }
 
@@ -54,8 +91,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      margin-top: 0px;
+      padding: 50px 20px;
+      .flexDefault(center, column);
+      width: 100%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        order: 2;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -71,6 +120,12 @@
         font-size: 2rem;
         width: 40%;
 
+        @media @phone {
+          width: 100%;
+          padding: 30px; 
+          border-radius: 5px;
+        }
+
         &:hover {
           background-color: @wild-sand;
           color: @ebony-clay;
@@ -82,12 +137,19 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
+
+        }
       }
     }
-  }
-}// home
+  // home
