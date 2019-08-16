@@ -155,6 +155,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -164,12 +168,12 @@ p {
   width: 100%;
   height: 12rem;
   background-color: #F6F6F6;
-  margin-top: 20px;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 .navigation-container h1 {
   font-size: 4rem;
@@ -280,7 +284,6 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
-  border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -321,6 +324,7 @@ footer {
   padding: 5px 10px;
   font-size: 2rem;
   width: 40%;
+  transition: 2s ease-out;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -332,7 +336,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #F6F6F6;
   color: #23293B;
-  transition: 2s;
+  transition: 2s ease-in;
 }
 .home .walk .walk-img {
   width: 46%;
