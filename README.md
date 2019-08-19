@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A responsive website responds to the size of a browser at any given width or point. The website will adjust and transform in a manner that enhances the screen content - no matter what the width of the browser might be. The website’s content will adjust evenly and in a smooth manner as the screen width changes depending on the different devices it is viewed on.
+
+On the other hand an adaptive website doesn’t respond as smoothly as a responsive website. Instead of adapting in a smooth manner the content of the website snaps into a place as the browser changes depending on the device it is viewed on. A responsive website is responsive as it is much more accessible and has a better readability than an adaptive website.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop first refers to when a website is designed and built to comply with the specs of a desktop screen. It means that a website is built in order for the content to be displayed in an optimum manner. Desktop first design ensure that the desktop experience is accessible and dynamic.
+
+Mobile first refers to when  a website is designed for a smaller device and then progresses into larger screens like tablets and desktops. Mobile first is designed for the purpose of the functionality of a mobile device. The content of the website is the most important element that is taken into consideration and has to be structured in an orderly manner.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+When the route font-size in a css file is set to 62,5% it makes the conversion from px to rem easier. In order to convert the px to rem you merely have to divide the pixel value by ten.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way of extending css by using the preprocessor’s unique syntaxes to create assets that helps to make generating css much quicker and easier.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept in preprocessing is making use of mixing, because it allows you to transform long lines of css into smaller snippets.
+
+The most challenging concept would be nesting as it generates long selector chains that can create confusion and errors if not used properly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -133,3 +150,5 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
+Lisa Meyer - 2am - 5am (central time) 
